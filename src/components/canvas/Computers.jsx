@@ -10,23 +10,28 @@ const Computers = ({ isMobile }) => {
 	Computers.propTypes = {
 		isMobile: PropTypes.bool,
 	};
-	const computer = useGLTF("./desktop_pc/scene.gltf");
+
+	// Ensure the GLTF path is correct
+	const computer = useGLTF("/desktop_pc/scene.gltf");
 
 	return (
 		<mesh>
-			<hemisphereLight intensity={2} groundColor="black" />
+			{/* Adjust lighting intensity for mobile */}
+			<hemisphereLight intensity={isMobile ? 1.5 : 2} groundColor="black" />
 			<spotLight
 				position={[-20, 50, 10]}
 				angle={0.12}
 				penumbra={1}
-				intensity={1}
+				intensity={isMobile ? 0.8 : 1}
 				castShadow
 				shadow-mapSize={1024}
 			/>
-			<pointLight intensity={2} />
+			<pointLight intensity={isMobile ? 1.5 : 2} />
+
+			{/* Apply scaling and positioning based on the device */}
 			<primitive
 				object={computer.scene}
-				scale={isMobile ? 0.7 : 0.75}
+				scale={isMobile ? 0.6 : 0.75}
 				position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
 				rotation={[-0.01, -0.2, -0.1]}
 			/>

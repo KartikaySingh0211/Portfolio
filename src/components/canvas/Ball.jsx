@@ -25,6 +25,7 @@ const Ball = ({ imgUrl }) => {
 				<Decal
 					position={[0, 0, 1]}
 					rotation={[2 * Math.PI, 0, 6.25]}
+					scale={1}
 					map={decal} // Load texture from useLoader
 					flatShading
 				/>
