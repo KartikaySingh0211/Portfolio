@@ -1,21 +1,15 @@
 /* eslint-disable react/no-unknown-property */
 import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import {
-	Decal,
-	Float,
-	OrbitControls,
-	Preload,
-	useTexture,
-} from "@react-three/drei";
+import { Canvas, useLoader } from "@react-three/fiber";
+import { Decal, Float, OrbitControls, Preload } from "@react-three/drei";
+import * as THREE from "three";
 import PropTypes from "prop-types";
 import CanvasLoader from "../Loader";
 
-const Ball = (props) => {
-	Ball.propTypes = {
-		imgUrl: PropTypes.string.isRequired,
-	};
-	const [decal] = useTexture([props.imgUrl]);
+const Ball = ({ imgUrl }) => {
+	// Use useLoader to load the texture
+	const decal = useLoader(THREE.TextureLoader, `${imgUrl}`);
+
 	return (
 		<Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
 			<ambientLight intensity={0.5} />
@@ -31,7 +25,7 @@ const Ball = (props) => {
 				<Decal
 					position={[0, 0, 1]}
 					rotation={[2 * Math.PI, 0, 6.25]}
-					map={decal}
+					map={decal} // Load texture from useLoader
 					flatShading
 				/>
 			</mesh>
@@ -39,10 +33,15 @@ const Ball = (props) => {
 	);
 };
 
+Ball.propTypes = {
+	imgUrl: PropTypes.string.isRequired,
+};
+
 const BallCanvas = ({ icon }) => {
 	BallCanvas.propTypes = {
-		icon: PropTypes.string,
+		icon: PropTypes.string.isRequired,
 	};
+
 	return (
 		<Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
 			<Suspense fallback={<CanvasLoader />}>
@@ -54,7 +53,6 @@ const BallCanvas = ({ icon }) => {
 				/>
 				<Ball imgUrl={icon} />
 			</Suspense>
-
 			<Preload all />
 		</Canvas>
 	);
