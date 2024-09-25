@@ -32,7 +32,9 @@ const Hero = () => {
 					smooth={true}
 					duration={500}
 					offset={0}
+					className="flex flex-col items-center"
 				>
+					<p className="cursor-pointer">Click to scroll</p>
 					<div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 cursor-pointer">
 						<motion.div
 							animate={{
