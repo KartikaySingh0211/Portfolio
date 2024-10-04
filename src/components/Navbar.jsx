@@ -96,9 +96,7 @@ const Navbar = () => {
 										setToggle(!toggle);
 										setActive(nav.title);
 									}}
-								>
-									<a href={`#${nav.id}`}>{nav.title}</a>
-								</li>
+								></li>
 							))}
 						</ul>
 					</div>
