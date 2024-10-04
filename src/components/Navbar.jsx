@@ -52,23 +52,23 @@ const Navbar = () => {
 
 				<ul className="list-none hidden sm:flex flex-row gap-10">
 					{navLinks.map((nav) => (
-						<li
+						<ScrollLink
 							key={nav.id}
-							className={`${
-								active === nav.title ? "text-white" : "text-secondary"
-							} hover:text-white text-[18px] font-medium cursor-pointer`}
-							onClick={() => setActive(nav.title)}
+							to={nav.id}
+							spy={true}
+							smooth={true}
+							duration={500}
+							offset={-70} // Adjust this value if you have a fixed navbar
 						>
-							<ScrollLink
-								to={nav.id}
-								spy={true}
-								smooth={true}
-								duration={500}
-								offset={-70} // Adjust this value if you have a fixed navbar
+							<li
+								className={`${
+									active === nav.title ? "text-white" : "text-secondary"
+								} hover:text-white text-[18px] font-medium cursor-pointer`}
+								onClick={() => setActive(nav.title)}
 							>
 								{nav.title}
-							</ScrollLink>
-						</li>
+							</li>
+						</ScrollLink>
 					))}
 				</ul>
 
@@ -87,16 +87,26 @@ const Navbar = () => {
 					>
 						<ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
 							{navLinks.map((nav) => (
-								<li
+								<ScrollLink
 									key={nav.id}
-									className={`font-poppins font-medium cursor-pointer text-[16px] ${
-										active === nav.title ? "text-white" : "text-secondary"
-									}`}
-									onClick={() => {
-										setToggle(!toggle);
-										setActive(nav.title);
-									}}
-								></li>
+									to={nav.id}
+									spy={true}
+									smooth={true}
+									duration={500}
+									offset={-70} // Adjust this value if you have a fixed navbar
+								>
+									<li
+										className={`font-poppins font-medium cursor-pointer text-[16px] ${
+											active === nav.title ? "text-white" : "text-secondary"
+										}`}
+										onClick={() => {
+											setToggle(!toggle);
+											setActive(nav.title);
+										}}
+									>
+										{nav.title}
+									</li>
+								</ScrollLink>
 							))}
 						</ul>
 					</div>
