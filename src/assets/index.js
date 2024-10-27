@@ -29,6 +29,7 @@ import tesla from "./company/tesla.png";
 import movierating from "./movierating.png";
 import quiz from "./quiz.png";
 import tailwindcss from "./tailwind.png";
+import apple from "./apple.png";
 
 export {
 	logo,
@@ -56,6 +57,7 @@ export {
 	shopify,
 	starbucks,
 	tesla,
+	apple,
 	movierating,
 	quiz,
 	tailwindcss,
