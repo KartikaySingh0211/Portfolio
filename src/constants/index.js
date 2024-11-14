@@ -8,6 +8,7 @@ import {
 	css,
 	reactjs,
 	// redux,
+	nextjs,
 	tailwind,
 	// nodejs,
 	// mongodb,
@@ -84,6 +85,10 @@ const technologies = [
 	// 	name: "Redux Toolkit",
 	// 	icon: redux,
 	// },
+	{
+		name: "Next JS",
+		icon: nextjs,
+	},
 	{
 		name: "Tailwind CSS",
 		icon: tailwind,
