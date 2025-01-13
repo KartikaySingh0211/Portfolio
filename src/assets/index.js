@@ -31,6 +31,7 @@ import movierating from "./movierating.png";
 import quiz from "./quiz.png";
 import tailwindcss from "./tailwind.png";
 import apple from "./apple.png";
+import nextPort from "./nextPort.png";
 
 export {
 	logo,
@@ -63,4 +64,5 @@ export {
 	movierating,
 	quiz,
 	tailwindcss,
+	nextPort,
 };

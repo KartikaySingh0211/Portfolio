@@ -21,9 +21,9 @@ import {
 	// shopify,
 	apple,
 	movierating,
-	quiz,
 	tailwindcss,
 	threejs,
+	nextPort,
 } from "../assets";
 
 export const navLinks = [
@@ -202,6 +202,31 @@ const projects = [
 			"https://github.com/KartikaySingh0211/AppleWebsiteUI_clone",
 	},
 	{
+		name: "NextJS portfolio website",
+		description:
+			"Portfolio website built using NextJS, Tailwind CSS, Typescript and AceternityUI.",
+		tags: [
+			{
+				name: "nextJS",
+				color: "green-text-gradient",
+			},
+			{
+				name: "tailwindcss",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "typescript",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "aceternityUI",
+				color: "orange-text-gradient",
+			},
+		],
+		image: nextPort,
+		source_code_link: "https://github.com/KartikaySingh0211/nextJS-portfolio",
+	},
+	{
 		name: "Movie Rating App",
 		description:
 			"Web-based application that allows users to search for movies, view details about them, and rate them based on their personal preferences.",
@@ -221,27 +246,6 @@ const projects = [
 		],
 		image: movierating,
 		source_code_link: "https://github.com/KartikaySingh0211/MovieRating",
-	},
-	{
-		name: "React Quiz App",
-		description:
-			"Web-based quiz application that allows users to take quizzes on thier decided topics and view their scores.",
-		tags: [
-			{
-				name: "react",
-				color: "green-text-gradient",
-			},
-			// {
-			// 	name: "restapi",
-			// 	color: "green-text-gradient",
-			// },
-			// {
-			// 	name: "scss",
-			// 	color: "pink-text-gradient",
-			// },
-		],
-		image: quiz,
-		source_code_link: "https://github.com/KartikaySingh0211/React-Quiz",
 	},
 	{
 		name: "Responsive Tailwindcss Website",
@@ -264,6 +268,19 @@ const projects = [
 		image: tailwindcss,
 		source_code_link:
 			"https://github.com/KartikaySingh0211/Responsive_Tailwind",
+	},
+];
+
+export const socialMedia = [
+	{
+		id: 1,
+		img: "/git.svg",
+		link: "https://github.com/KartikaySingh0211",
+	},
+	{
+		id: 2,
+		img: "/link.svg",
+		link: "www.linkedin.com/in/kartikaysingh0211",
 	},
 ];
 
