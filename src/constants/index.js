@@ -20,10 +20,10 @@ import {
 	// tesla,
 	// shopify,
 	apple,
-	movierating,
 	tailwindcss,
 	threejs,
 	nextPort,
+	wild,
 } from "../assets";
 
 export const navLinks = [
@@ -227,25 +227,25 @@ const projects = [
 		source_code_link: "https://github.com/KartikaySingh0211/nextJS-portfolio",
 	},
 	{
-		name: "Movie Rating App",
+		name: "The Wild Oasis Website",
 		description:
-			"Web-based application that allows users to search for movies, view details about them, and rate them based on their personal preferences.",
+			"An online cabin booking website built using NextJS, Tailwind CSS and Supabase.",
 		tags: [
 			{
-				name: "react",
+				name: "NextJS",
 				color: "blue-text-gradient",
 			},
-			// {
-			// 	name: "mongodb",
-			// 	color: "green-text-gradient",
-			// },
-			// {
-			// 	name: "tailwind",
-			// 	color: "pink-text-gradient",
-			// },
+			{
+				name: "Supabase",
+				color: "green-text-gradient",
+			},
+			{
+				name: "tailwind",
+				color: "pink-text-gradient",
+			},
 		],
-		image: movierating,
-		source_code_link: "https://github.com/KartikaySingh0211/MovieRating",
+		image: wild,
+		source_code_link: "https://github.com/KartikaySingh0211/the-wild-oasis",
 	},
 	{
 		name: "Responsive Tailwindcss Website",
