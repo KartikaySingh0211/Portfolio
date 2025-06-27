@@ -23,7 +23,7 @@ import {
 	tailwindcss,
 	threejs,
 	nextPort,
-	wild,
+	// wild,
 } from "../assets";
 
 export const navLinks = [
@@ -226,27 +226,27 @@ const projects = [
 		image: nextPort,
 		source_code_link: "https://github.com/KartikaySingh0211/nextJS-portfolio",
 	},
-	{
-		name: "The Wild Oasis Website",
-		description:
-			"An online cabin booking website built using NextJS, Tailwind CSS and Supabase.",
-		tags: [
-			{
-				name: "NextJS",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "Supabase",
-				color: "green-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "pink-text-gradient",
-			},
-		],
-		image: wild,
-		source_code_link: "https://github.com/KartikaySingh0211/the-wild-oasis",
-	},
+	// {
+	// 	name: "The Wild Oasis Website",
+	// 	description:
+	// 		"An online cabin booking website built using NextJS, Tailwind CSS and Supabase.",
+	// 	tags: [
+	// 		{
+	// 			name: "NextJS",
+	// 			color: "blue-text-gradient",
+	// 		},
+	// 		{
+	// 			name: "Supabase",
+	// 			color: "green-text-gradient",
+	// 		},
+	// 		{
+	// 			name: "tailwind",
+	// 			color: "pink-text-gradient",
+	// 		},
+	// 	],
+	// 	image: wild,
+	// 	source_code_link: "https://github.com/KartikaySingh0211/the-wild-oasis",
+	// },
 	{
 		name: "Responsive Tailwindcss Website",
 		description:
