@@ -7,11 +7,11 @@ import {
 	html,
 	css,
 	reactjs,
-	// redux,
+	redux,
 	nextjs,
 	tailwind,
 	// nodejs,
-	// mongodb,
+	mongodb,
 	git,
 	// figma,
 	// docker,
@@ -50,10 +50,10 @@ const services = [
 		title: "React Developer",
 		icon: mobile,
 	},
-	// {
-	// 	title: "Backend Developer",
-	// 	icon: backend,
-	// },
+	{
+		title: "NextJS Developer",
+		icon: nextjs,
+	},
 	// {
 	// 	title: "Content Creator",
 	// 	icon: creator,
@@ -81,10 +81,10 @@ const technologies = [
 		name: "React JS",
 		icon: reactjs,
 	},
-	// {
-	// 	name: "Redux Toolkit",
-	// 	icon: redux,
-	// },
+	{
+		name: "Redux Toolkit",
+		icon: redux,
+	},
 	{
 		name: "Next JS",
 		icon: nextjs,
@@ -97,10 +97,10 @@ const technologies = [
 	// 	name: "Node JS",
 	// 	icon: nodejs,
 	// },
-	// {
-	// 	name: "MongoDB",
-	// 	icon: mongodb,
-	// },
+	{
+		name: "MongoDB",
+		icon: mongodb,
+	},
 	{
 		name: "Three JS",
 		icon: threejs,
