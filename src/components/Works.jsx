@@ -14,6 +14,7 @@ const ProjectCard = ({
 	tags,
 	image,
 	source_code_link,
+	website_link,
 }) => {
 	ProjectCard.propTypes = {
 		index: PropTypes.number,
@@ -27,10 +28,14 @@ const ProjectCard = ({
 		),
 		image: PropTypes.string,
 		source_code_link: PropTypes.string,
+		website_link: PropTypes.string,
 	};
 
 	return (
-		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+		<motion.div
+			variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+			onClick={() => window.open(website_link, "_blank")}
+		>
 			<Tilt
 				options={{
 					max: 45,

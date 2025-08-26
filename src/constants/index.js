@@ -10,7 +10,7 @@ import {
 	redux,
 	nextjs,
 	tailwind,
-	// nodejs,
+	nodejs,
 	mongodb,
 	git,
 	// figma,
@@ -19,8 +19,9 @@ import {
 	// starbucks,
 	// tesla,
 	// shopify,
+	vitrendz,
 	apple,
-	tailwindcss,
+	signature,
 	threejs,
 	nextPort,
 	// wild,
@@ -30,6 +31,10 @@ export const navLinks = [
 	{
 		id: "about",
 		title: "About",
+	},
+	{
+		id: "experience",
+		title: "Experience",
 	},
 	{
 		id: "work",
@@ -54,10 +59,6 @@ const services = [
 		title: "NextJS Developer",
 		icon: nextjs,
 	},
-	// {
-	// 	title: "Content Creator",
-	// 	icon: creator,
-	// },
 ];
 
 const technologies = [
@@ -93,10 +94,10 @@ const technologies = [
 		name: "Tailwind CSS",
 		icon: tailwind,
 	},
-	// {
-	// 	name: "Node JS",
-	// 	icon: nodejs,
-	// },
+	{
+		name: "Node JS",
+		icon: nodejs,
+	},
 	{
 		name: "MongoDB",
 		icon: mongodb,
@@ -119,60 +120,33 @@ const technologies = [
 	// },
 ];
 
-// const experiences = [
-// 	{
-// 		title: "React.js Developer",
-// 		company_name: "Starbucks",
-// 		icon: starbucks,
-// 		iconBg: "#383E56",
-// 		date: "March 2020 - April 2021",
-// 		points: [
-// 			"Developing and maintaining web applications using React.js and other related technologies.",
-// 			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-// 			"Implementing responsive design and ensuring cross-browser compatibility.",
-// 			"Participating in code reviews and providing constructive feedback to other developers.",
-// 		],
-// 	},
-// 	{
-// 		title: "React Native Developer",
-// 		company_name: "Tesla",
-// 		icon: tesla,
-// 		iconBg: "#E6DEDD",
-// 		date: "Jan 2021 - Feb 2022",
-// 		points: [
-// 			"Developing and maintaining web applications using React.js and other related technologies.",
-// 			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-// 			"Implementing responsive design and ensuring cross-browser compatibility.",
-// 			"Participating in code reviews and providing constructive feedback to other developers.",
-// 		],
-// 	},
-// 	{
-// 		title: "Web Developer",
-// 		company_name: "Shopify",
-// 		icon: shopify,
-// 		iconBg: "#383E56",
-// 		date: "Jan 2022 - Jan 2023",
-// 		points: [
-// 			"Developing and maintaining web applications using React.js and other related technologies.",
-// 			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-// 			"Implementing responsive design and ensuring cross-browser compatibility.",
-// 			"Participating in code reviews and providing constructive feedback to other developers.",
-// 		],
-// 	},
-// 	{
-// 		title: "Full stack Developer",
-// 		company_name: "Meta",
-// 		icon: meta,
-// 		iconBg: "#E6DEDD",
-// 		date: "Jan 2023 - Present",
-// 		points: [
-// 			"Developing and maintaining web applications using React.js and other related technologies.",
-// 			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-// 			"Implementing responsive design and ensuring cross-browser compatibility.",
-// 			"Participating in code reviews and providing constructive feedback to other developers.",
-// 		],
-// 	},
-// ];
+const experiences = [
+	{
+		title: "NextJS Developer",
+		company_name: "VITrendz",
+		icon: vitrendz,
+		iconBg: "#383E56",
+		date: "November 2024 - February 2025",
+		points: [
+			"Developed the official VITrendz Homepage using Next.js, with responsive design, SEO optimization, and clean code architecture.",
+			"Built the initial UI and routing for the Hostel Review Platform using Next.js, focused on dynamic content and user interactions.",
+			"Contributed core components to the FFCS Planner in React.js, enhancing UX for course selection and modular functionality.",
+			"Participating in code reviews and providing constructive feedback to other developers.",
+		],
+	},
+	{
+		title: "Technical Head",
+		company_name: "VITrendz",
+		icon: vitrendz,
+		iconBg: "#271E56",
+		date: "February 2025 - Present",
+		points: [
+			"Leading a team of frontend developers to scale and enhance the VITrendz ecosystem, including the Homepage, Hostel Review Platform, and FFCS Planner.",
+			"Overseeing architecture decisions, code reviews, and feature planning while mentoring junior developers and ensuring timely deliveries.",
+			"Initiating and managing new projects, aligning technical direction with product goals and student needs.",
+		],
+	},
+];
 
 const projects = [
 	{
@@ -200,6 +174,7 @@ const projects = [
 		image: apple,
 		source_code_link:
 			"https://github.com/KartikaySingh0211/AppleWebsiteUI_clone",
+		website_link: "https://apple-website-ui-clone-sigma.vercel.app/",
 	},
 	{
 		name: "NextJS portfolio website",
@@ -225,6 +200,7 @@ const projects = [
 		],
 		image: nextPort,
 		source_code_link: "https://github.com/KartikaySingh0211/nextJS-portfolio",
+		website_link: "https://extraordinary-centaur-4feb1f.netlify.app/",
 	},
 	// {
 	// 	name: "The Wild Oasis Website",
@@ -248,26 +224,26 @@ const projects = [
 	// 	source_code_link: "https://github.com/KartikaySingh0211/the-wild-oasis",
 	// },
 	{
-		name: "Responsive Tailwindcss Website",
+		name: "Signature Asia's Website",
 		description:
-			"Responsive website built using Tailwind CSS that showcases various features of the framework.",
+			"Made a new landing page for a client along with SEO optimization, reusable components, and responsive design using Next.js, Typescript and Tailwind CSS.",
 		tags: [
-			// {
-			// 	name: "nextjs",
-			// 	color: "blue-text-gradient",
-			// },
-			// {
-			// 	name: "supabase",
-			// 	color: "green-text-gradient",
-			// },
 			{
-				name: "Tailwindcss",
+				name: "nextjs",
 				color: "pink-text-gradient",
 			},
+			{
+				name: "typescript",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Tailwindcss",
+				color: "green-text-gradient",
+			},
 		],
-		image: tailwindcss,
-		source_code_link:
-			"https://github.com/KartikaySingh0211/Responsive_Tailwind",
+		image: signature,
+		source_code_link: "https://github.com/KartikaySingh0211/signature_asia",
+		website_link: "https://www.signatureasias.com/",
 	},
 ];
 
@@ -284,5 +260,4 @@ export const socialMedia = [
 	},
 ];
 
-export { services, technologies, projects };
-// export { services, technologies, experiences, projects };
+export { services, technologies, experiences, projects };

@@ -9,6 +9,7 @@ import {
 	Works,
 	StarsCanvas,
 } from "./components";
+import Experience from "./components/Experience";
 
 function App() {
 	return (
@@ -19,7 +20,7 @@ function App() {
 					<Hero />
 				</div>
 				<About />
-				{/* <Experience /> */}
+				<Experience />
 				<Tech />
 				<Works />
 				<div className="relative z-0">

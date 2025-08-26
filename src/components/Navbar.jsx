@@ -46,7 +46,7 @@ const Navbar = () => {
 					<img src={logo} alt="logo" className="w-20 h-20 object-contain" />
 					<p className="text-white text-[18px] font-bold cursor-pointer">
 						Kartikay Singh{" "}
-						<span className="sm:block hidden">| React Developer</span>
+						<span className="sm:block hidden">| NextJS & React Developer</span>
 					</p>
 				</Link>
 

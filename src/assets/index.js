@@ -26,12 +26,14 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import vitrendz from "./company/vitrendz.png";
 
 import wild from "./wild.png";
 import quiz from "./quiz.png";
 import tailwindcss from "./tailwind.png";
 import apple from "./apple.png";
 import nextPort from "./nextPort.png";
+import signature from "./signature.png";
 
 export {
 	logo,
@@ -60,9 +62,11 @@ export {
 	shopify,
 	starbucks,
 	tesla,
+	vitrendz,
 	apple,
 	wild,
 	quiz,
 	tailwindcss,
 	nextPort,
+	signature,
 };
